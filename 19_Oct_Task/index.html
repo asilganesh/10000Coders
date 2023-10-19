@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li:hover{
+            font-size: 30px;
+        }
+
+        
+
+     li.home::marker{
+      content: url(./images/home_FILL0_wght400_GRAD0_opsz24.png);
+    }
+     li.apps::marker{
+      content: url(./images/apps_FILL0_wght400_GRAD0_opsz24.png);
+    }
+     li.settings::marker{
+      content: url(./images/settings_FILL0_wght400_GRAD0_opsz24.png);
+    }
+     li.download::marker{
+      content: url(./images/arrow_downward_FILL0_wght400_GRAD0_opsz24.png);
+    }
+
+    ul li{
+        line-height: 2;
+        font-size: 20px;
+    }
+
+    table,tr,th,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding:10px;
+        text-align: center;
+    }
+       table tr:hover{
+        color: white;
+        background-color: black;
+       }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Task :: Placing icons in Lists</h1>
+        <ul>
+            <li class="home">Home</li> 
+            <li class="apps">Apps</li>
+            <li class="settings">Settings</li>
+            <li class="download">Download</li>
+        </ul>
+    </div>
+<hr>
+    <div>
+<h1>Table task</h1>
+        <table>
+            <tr>
+                
+                <th>College</th>
+                <th>Year fo passedout</th>
+                <th>CGPA</th>
+            </tr>
+            <tr>
+                <td>Aurora</td>
+                <td>2021</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Sri Chaitanya</td>
+                <td>2018</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>NewGen</td>
+                <td>2018</td>
+                <td>9</td>
+            </tr>
+            
+        </table>
+    </div>
+
+   
+    
+</body>
+</html>
