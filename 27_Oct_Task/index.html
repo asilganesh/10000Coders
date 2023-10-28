@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+
+        body{
+            width:fit-content
+            height: 100vh;
+        }
+        h1{
+            color:green;
+            text-align: center;
+        }
+
+img{
+    width: 100%;
+    margin: -5px;
+    vertical-align: middle;
+}
+.photo{
+
+    display: flex;
+}
+/* .firstcol,.secondcol,.thirdcol{
+    flex-flow: column wrap;
+    float: left;
+    width: 100%;
+} */
+
+.firstcol {
+    width: 100%;
+}
+.secondcol{
+    width:100% ;
+}
+.thirdcol{
+    width:100% ;
+}
+
+    </style>
+</head>
+<body>
+<h1>PhotoFlex</h1>
+<div class="photo">
+<div class="firstcol">
+    <img src="./images/1.jpg" alt="" class="one">
+    <img src="./images/9.jpg" alt="" class="two">
+    <img src="./images/12.jpg" alt="" class="three">
+    <img src="./images/14.jpg" alt="" class="four">
+    <img src="./images/16.jpg" alt="" class="five">
+    <img src="./images/18.jpg" alt="" class="six">
+
+</div>
+<div class="secondcol">
+    <img src="./images/2.jpg" alt="" class="one">
+    <img src="./images/4.jpg" alt="" class="two">
+    <img src="./images/6.jpg" alt="" class="three">
+    <img src="./images/10.jpg" alt="" class="four">
+    <img src="./images/13.jpg" alt="" class="five">
+    <img src="./images/19.jpg" alt="" class="six">
+
+</div>
+<div class="thirdcol">
+    <img src="./images/3.jpg" alt="" class="one">
+    <img src="./images/5.jpg" alt="" class="two">
+    <img src="./images/7.jpg" alt="" class="six">
+    <img src="./images/11.jpg" alt="" class="three">
+    <img src="./images/15.jpg" alt="" class="four">
+    <img src="./images/17.jpg" alt="" class="five">
+
+</div>
+
+
+
+</div>    
+</body>
+</html>
