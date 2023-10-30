@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+</head>
+<style>
+    .gridcontainer{
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns:auto auto auto auto;
+        grid-template-rows: auto auto auto auto ;
+        padding: 50px;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+       
+        
+    }
+
+   
+
+    .box2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 10;
+    }
+
+.box2 img{
+    width: 100%;
+    height: 100%;
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+}
+ 
+.box3 img{
+    width: 100%;
+    height: 100%;
+}
+.box4 img{
+    width: 100%;
+    height: 100%;
+}
+.box5 img{
+    width: 100%;
+    height: 100%;
+}
+.box6 img{
+    width: 100%;
+    height: 100%;
+}
+.box7 img{
+    width: 100%;
+    height: 100%;
+}
+.orange{
+    background-color: orange;
+    grid-column:1/5;
+    grid-row:1/3;
+    font-size: 50px;
+    color: orange;
+
+   
+    
+    
+}
+.white{
+    background-color: white;
+    grid-column: 1/5;
+    grid-row:3/5;
+    font-size: 50px;
+    color: white;
+    position: relative;
+}
+.green{
+    background-color: green;
+    grid-column: 1/5;
+    grid-row:5/7;
+    font-size: 50px;
+    color: green;
+   
+
+}
+.chakra{
+    background-image: repeating-conic-gradient( white 10deg 20deg, blue 20deg 30deg);
+    border-radius: 50%;
+    border: 1px solid blue;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    left: 40%;
+    bottom: 1px;
+}
+</style>
+
+<body>
+
+<div class="gridcontainer">
+    <div class="orange">1</div>
+    <div class="white">2 <div class="chakra"></div></div>
+    <div class="green">3</div>
+   <div class="box1">
+    <img src="../images/BhagatSingh011.avif" alt="">
+   </div>
+   <div class="box2">
+    <img src="../images/bharat-mata.jpg" alt="">
+   </div>
+   <div class="box3">
+    <img src="../images/netaji.jpg" alt="">
+   </div>
+   <div class="box4">
+    <img src="../images/Sardar_patel_(cropped).jpg" alt="">
+   </div>
+   <div class="box5">
+    <img src="../images/Chandra-Shekhar-Azad.jpg" alt="">
+   </div>
+   <div class="box6">
+    <img src="../images/nathuram.jpg" alt="">
+   </div>
+   <div class="box7">
+    <img src="../images/1773cac59274171ffde18aa593b07fdd.jpg" alt="">
+   </div>
+   
+          
+</div>
+    
+    
+</body>
+</html>

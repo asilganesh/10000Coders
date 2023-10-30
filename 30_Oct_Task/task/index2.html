@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        display: grid;
+        grid-template-columns: auto auto;
+        animation-name: car;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .car{
+        height: 100px;
+        width: 400px;
+        background-color: blue;
+        grid-column-start: 1;
+        grid-column-end:8;
+    }
+    .round{
+        height: 100px;
+        width: 100px;
+        /* border: 1px solid black; */
+        border-radius: 50%;
+        background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);;
+        animation-name: round;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    
+
+    }
+    .round1{
+        height: 100px;
+        width: 100px;
+        /* border: 1px solid black; */
+        border-radius: 50%;
+        background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);;
+        animation-name: round;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    
+
+    }
+    .one{
+        height: 200px;
+        width: 30px;
+        background-color: blue;
+    }
+    @keyframes round {
+    100%{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes car{
+        100%{
+            transform: translateX(1000px);
+        }
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="car">
+
+        </div>
+
+    <div class="round">
+        
+
+    </div>
+    <div class="round1">
+        
+
+    </div>
+    
+    </div>
+    
+</body>
+</html>
