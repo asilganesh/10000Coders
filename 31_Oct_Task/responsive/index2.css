@@ -1,0 +1,782 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color:black;
+    width: 100%;
+    height: 100vh;
+
+}
+
+/* This is Navbar */
+.navbar{
+    padding: 10px;
+    background-color: rgba(1,1,1,.6) ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-family: sans-serif;
+    
+}
+.navbar a:hover{
+
+    color: orange;
+    transition-duration: 1s;
+}
+
+/* This is home page */
+
+.backgroundimage img{
+
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+     position: relative;
+
+}
+.outletname{
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+
+}
+.mmm{
+    font-size: 10px;
+    text-shadow: 1px 1px 3px;
+}
+.noodle{
+    font-size: 20px;
+    color: orange;
+    line-height: 130%;
+    text-shadow: 1px 1px 2px;
+
+
+}
+.delights{
+    font-size: 10px;
+    text-shadow: 1px 1px 3px;
+
+}
+hr{
+    margin: 5%;
+    opacity: .5;
+}
+
+/* This is ABout  */
+
+.containerabout{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto ;
+
+    padding: 10px;
+    gap: 5px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.containerabout img{
+
+    width: 100%;  
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;  
+    grid-row-end: 5;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.containerabout h2{
+    font-size: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+    text-align: center;
+    color: white;
+}
+.containerabout p{
+    font-size: 8px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;  
+    grid-row-end: 5;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    line-height: 12px;
+ 
+}
+/* This is Menu */
+#menu{
+    display: flex;
+    flex-flow: row wrap;
+   justify-content: center;
+   align-content: space-around;
+    font-family:monospace;
+    color: white;
+
+}
+
+#menu h2{
+    font-size: 15px;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+}
+
+
+li{
+    list-style: number;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0% 10%;
+}
+
+li span{
+    opacity: .7;
+}
+
+/* This is contact */
+
+#form h3{
+    
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form p{
+
+    color: white;
+     font-size: 8px;
+}
+input{
+    width: 90%;
+    margin: 10px 10px;
+    padding: 10px;
+   border: 1px solid #F4F6F6;
+   font-size: 10px;
+   opacity: .8;
+}
+.messagebutton{
+    margin: 1% 1%;
+    padding:10px;
+    background-color:whitesmoke;
+    color:black;
+    font-weight: bold;
+    font-size: 10px;
+    
+}
+.form{
+    margin: 2% 2%;
+}
+
+/* This is Map */
+
+iframe{
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    height: 100%;;
+}
+
+/* This is footer */
+
+.footer{
+    background: rgb(185,26,220);
+    background: linear-gradient(0deg, rgba(185,26,220,0.29744397759103647) 0%, rgba(70,64,195,0.3086484593837535) 80%);
+        color: white ;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width:600px) and (max-width:820px){
+
+    /* This is Navbar */
+.navbar{
+    padding: 20px;
+    background-color: rgba(1,1,1,.6) ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+.navbar a:hover{
+
+    color: orange;
+    transition-duration: 1s;
+}
+
+/* this is outlet name */
+
+.outletname{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+
+}
+.mmm{
+    font-size: 20px;
+    text-shadow: 1px 1px 3px;
+}
+.noodle{
+    font-size: 40px;
+    color: orange;
+    line-height: 130%;
+    text-shadow: 1px 1px 2px;
+
+
+}
+.delights{
+    font-size: 20px;
+    text-shadow: 1px 1px 3px;
+
+}
+
+/* This is ABout  */
+
+.containerabout{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto ;
+
+    padding: 20px;
+    gap: 5px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.containerabout img{
+
+    width: 100%;  
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;  
+    grid-row-end: 5;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.containerabout h2{
+    font-size: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+    text-align: center;
+    color: white;
+}
+.containerabout p{
+    font-size: 16px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;  
+    grid-row-end: 5;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    line-height: 24px;
+ 
+}
+
+/* This is Menu */
+#menu{
+    display: flex;
+    flex-flow: row wrap;
+   justify-content: center;
+   align-content: space-around;
+    font-family:monospace;
+    color: white;
+
+}
+
+#menu h2{
+    font-size: 30px;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+}
+
+li{
+    list-style: number;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    margin: 0% 10%;
+}
+
+li span{
+    opacity: .7;
+}
+
+/* This is contact */
+
+#form h3{
+    
+    font-size: 30px;
+    margin-bottom: 5%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form p{
+
+    color: white;
+     font-size: 20px;
+}
+input{
+    width: 100%;
+    margin: 10px 10px;
+    padding: 20px;
+   border: 1px solid #F4F6F6;
+   font-size: 20px;
+   opacity: .8;
+}
+.messagebutton{
+    margin: 1% 1%;
+    padding:20px;
+    background-color:whitesmoke;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.form{
+    margin: 2% 2%;
+}
+
+/* This is Map */
+
+iframe{
+    margin: 10px auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;;
+}
+
+/* This is footer */
+
+.footer{
+    background: rgb(185,26,220);
+    background: linear-gradient(0deg, rgba(185,26,220,0.29744397759103647) 0%, rgba(70,64,195,0.3086484593837535) 80%);
+        color: white ;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+}
+
+@media only screen and (min-width:830px) and (max-width:1200px){
+
+    /* This is Navbar */
+.navbar{
+    padding: 30px;
+    background-color: rgba(1,1,1,.6) ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    
+}
+.navbar a:hover{
+
+    color: orange;
+    transition-duration: 1s;
+}
+
+/* this is outlet name */
+
+.outletname{
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+
+}
+.mmm{
+    font-size: 30px;
+    text-shadow: 1px 1px 3px;
+}
+.noodle{
+    font-size: 60px;
+    color: orange;
+    line-height: 130%;
+    text-shadow: 1px 1px 2px;
+
+
+}
+.delights{
+    font-size: 30px;
+    text-shadow: 1px 1px 3px;
+
+}
+
+/* This is ABout  */
+
+.containerabout{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto ;
+
+    padding: 30px;
+    gap: 5px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.containerabout img{
+
+    width: 100%;  
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;  
+    grid-row-end: 5;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.containerabout h2{
+    font-size: 30px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+    text-align: center;
+    color: white;
+}
+.containerabout p{
+    font-size: 24px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;  
+    grid-row-end: 5;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    line-height: 180%;
+ 
+}
+
+/* This is Menu */
+#menu{
+    display: flex;
+    flex-flow: row wrap;
+   justify-content: center;
+   align-content: space-around;
+    font-family:monospace;
+    color: white;
+
+}
+
+#menu h2{
+    font-size: 45px;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+}
+
+li{
+    list-style: number;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 180%;
+    text-align: left;
+    margin: 0% 10%;
+}
+
+li span{
+    opacity: .7;
+}
+
+/* This is contact */
+
+#form h3{
+    
+    font-size: 45px;
+    margin-bottom: 5%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form p{
+
+    color: white;
+     font-size: 30px;
+}
+input{
+    width: 100%;
+    margin: 10px 10px;
+    padding: 20px;
+   border: 1px solid #F4F6F6;
+   font-size: 30px;
+   opacity: .8;
+}
+.messagebutton{
+    margin: 1% 1%;
+    padding:20px;
+    background-color:whitesmoke;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.form{
+    margin: 2% 2%;
+}
+
+/* This is Map */
+
+iframe{
+    margin: 10px auto;
+    padding: 30px;
+    width: 100%;
+    height: 100%;;
+}
+
+/* This is footer */
+
+.footer{
+    background: rgb(185,26,220);
+    background: linear-gradient(0deg, rgba(185,26,220,0.29744397759103647) 0%, rgba(70,64,195,0.3086484593837535) 80%);
+        color: white ;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+}
+
+@media only screen and (min-width:1220px) and (max-width:1800px){
+
+    /* This is Navbar */
+.navbar{
+    padding: 30px;
+    background-color: rgba(1,1,1,.6) ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    
+}
+
+.navbar a:hover{
+
+    color: orange;
+    transition-duration: 1s;
+}
+
+/* this is outlet name */
+
+.outletname{
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+
+}
+.mmm{
+    font-size: 40px;
+    text-shadow: 1px 1px 3px;
+}
+.noodle{
+    font-size: 80px;
+    color: orange;
+    line-height: 130%;
+    text-shadow: 1px 1px 2px;
+
+
+}
+.delights{
+    font-size: 40px;
+    text-shadow: 1px 1px 3px;
+
+}
+
+/* This is ABout  */
+
+.containerabout{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto ;
+
+    padding: 40px;
+    gap: 5px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.containerabout img{
+
+    width: 100%;  
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;  
+    grid-row-end: 5;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.containerabout h2{
+    font-size: 30px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+    text-align: center;
+    color: white;
+}
+.containerabout p{
+    font-size: 24px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;  
+    grid-row-end: 5;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    line-height: 180%;
+ 
+}
+
+/* This is Menu */
+#menu{
+    display: flex;
+    flex-flow: row wrap;
+   justify-content: center;
+   align-content: space-around;
+    font-family:monospace;
+    color: white;
+
+}
+
+#menu h2{
+    font-size: 45px;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+}
+
+li{
+    list-style: number;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 180%;
+    text-align: left;
+    margin: 0% 10%;
+}
+
+li span{
+    opacity: .7;
+}
+
+/* This is contact */
+
+#form h3{
+    
+    font-size: 45px;
+    margin-bottom: 5%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form p{
+
+    color: white;
+     font-size: 30px;
+}
+input{
+    width: 100%;
+    margin: 10px 10px;
+    padding: 10px;
+   border: 1px solid #F4F6F6;
+   font-size: 20px;
+   opacity: .8;
+}
+.messagebutton{
+    margin: 1% 1%;
+    padding:10px;
+    background-color:whitesmoke;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+.form{
+    margin: 2% 2%;
+}
+
+/* This is Map */
+
+iframe{
+    margin: 10px auto;
+    padding: 30px;
+    width: 100%;
+    height: 100%;;
+}
+
+/* This is footer */
+
+.footer{
+    background: rgb(185,26,220);
+    background: linear-gradient(0deg, rgba(185,26,220,0.29744397759103647) 0%, rgba(70,64,195,0.3086484593837535) 80%);
+        color: white ;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+}
+
