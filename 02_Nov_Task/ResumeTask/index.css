@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: arial;
+   white-space: wrap;
+    
+}
+
+.profilepic{
+    
+    margin: 5% 45%;
+
+}
+.profilepic img{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    
+}
+.divider{
+    width: 90%;
+    height: 1vh;
+    background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    margin: 0% auto;
+
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2% 5%;
+    justify-content: space-around;
+}
+.hobbies{
+    width: 25%;
+    height: 50vh;
+    border: none;
+    box-shadow: 0px 0px 2px;
+    padding: 5px;
+    overflow: scroll;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+li{
+    margin: 5% auto;
+    list-style-type: number;
+    background-color: #b5c6e0;
+    padding: 20px;
+}
+.hobbies p{
+    text-align: center;
+    padding: 5px;
+    background-color: #6d90b9;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: -5px;
+    color: white;
+
+
+}
+
+.hobbies p,li{
+    box-shadow: 0px 2px 0px #F4F6F6;
+    font-size: 24px;
+}
+.skills{
+    width: 25%;
+    height: 50vh;
+    border: none;
+    box-shadow: 0px 0px 2px;
+    padding: 5px;
+    overflow: scroll;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+li{
+    margin: 5% auto;
+    list-style-type: number;
+    background-color: #b5c6e0;
+    padding: 20px;
+}
+.skills p{
+    text-align: center;
+    padding: 5px;
+    background-color: #6d90b9;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: -5px;
+    color: white;
+
+
+}
+
+.skills p,li{
+    box-shadow: 0px 2px 0px #F4F6F6;
+    font-size: 24px;
+    
+}
+
+.resume{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 100%;
+    height: 8vh;
+    margin: 0% 10%; 
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(90deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+}

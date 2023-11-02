@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardOne</title>
+
+    <style>
+        .card{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+            border: 1px solid #F8F9F9;
+            box-shadow: 0px 0px 1px;
+            box-sizing: border-box;
+            margin: 10% 20%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #F8F9F9;
+            justify-items: center;
+            font-family: arial;
+
+        }
+        .two{
+            background-color: white;
+            width: 100%;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            text-align: center;
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 10%;
+            font-size: 24px;
+            padding: 20px 10px;
+            row-gap: 20px;
+            box-shadow: 0px 0px 1px;
+            color: #2C3E50;
+
+        }
+        .bold{
+            text-align: center;
+            font-weight: bold;
+            font-size: 32px;
+            
+        }
+        button{
+            background-color:#1976D2;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 24px;
+            color: white;
+        }
+     p.one{
+        font-size: 24px;
+        margin: 0px;
+        vertical-align: center;
+        color: #566573;
+        
+     }
+            
+     .three{
+        font-size:24px;
+        margin: 0px;
+        vertical-align: center;
+        color: #566573;
+
+     }
+            
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <p class="one">Featured</p>
+        <p class="two"><span class="bold">Special title treatment</span> With supporting text below as a natural lead-in to additional content <span class="btn"><button>Go somewhere</button></span></p>
+        <p class="three">2 days ago</p>
+    </div>
+</body>
+</html>

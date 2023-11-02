@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Two</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<style>
+    .card{
+        display: flex;
+        flex-flow: column wrap;
+        border: 1px solid #D7DBDD;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 1px #F2F3F4;
+        margin: 10% auto;
+        width: 350px;
+        height: 500px;
+    }
+    .one{
+        background-image: url(./images/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 30%;
+        border-top-right-radius:  10px;
+        border-top-left-radius:  10px;
+        position: relative;
+
+    }
+    .time{
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        display: flex;
+        flex-flow: column wrap;
+        text-shadow: 0px 0px 2px;
+        
+    }
+    .time h1{
+        color: white;
+        font-family: arial;
+        font-weight: 100;
+        display: inline-block;
+        margin-bottom: 0px;
+        text-shadow: 0px 0px 2px;
+        letter-spacing: 3px;
+        font-size: 2em;
+
+
+    }
+    .time p{
+        color: white;
+        font-family: arial;
+        font-weight: 100;
+        font-size: 12px;
+        margin: -2px;
+        text-shadow: 0px 0px 2px;
+        letter-spacing: .5px;
+
+
+
+    }
+    .three{
+        width: 100%;
+        height: 10%;
+        /* background: black; */
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 12px;
+        justify-content: space-around;
+        box-shadow: 0px 0px 1px;
+        border-bottom-right-radius:  10px;
+        border-bottom-left-radius:  10px;
+        justify-items: baseline;
+        color: #2C3E50;
+        font-family: arial;
+
+
+        
+    }
+    .two{
+        height: 60%;
+        width: 100%;
+    }
+    .batch{
+    display: flex;
+    flex-flow: row wrap;
+    font-family: arial;
+    width: 100%;
+    margin: 5% auto;
+
+    }
+    .batch p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    margin-left: 10%;
+    margin-right: 20%;
+    }
+
+
+    li{
+    list-style-type: none;
+    vertical-align: center;
+    margin: auto;
+    }
+    li .material-symbols-outlined{
+
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    color: #BDC3C7;
+    }
+    li button{
+    background-color:#0277BD;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: white;
+    font-size: 16px;
+    font-family: arial;
+    }
+
+    .material-symbols-outlined {
+    vertical-align: center;
+
+    color:#3498DB;
+    }
+    .timings{
+    margin-top: -15px;
+    text-align: center;
+    }
+    .timings span{
+    font-size: 15px;
+    margin-left:0px;
+    }
+    .meetingid{
+    margin-top: 15px;
+    text-align: center;
+    }
+    .meetingid span{
+    font-size: 15px;
+    margin-left:0px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="one">
+        <div class="time">
+            <h1>03:40AM</h1>
+            <p>Monday, January 22, 2023</p>
+        </div>
+    </div>
+    <div class="two">
+        <div class="batch">
+            <p>96r frontend</p>
+            <li><span class="material-symbols-outlined more">
+                more_horiz
+                </span>
+            </li>
+            <li><button>Start</button></li>
+        </div>
+        <div class="timings">
+            <span style="letter-spacing: 1px;">04:00 AM - 05:00 AM</span>
+                <span style="opacity: .6;">|</span>
+            <span style="color:#2196F3;">Starts in 20 minutes</span>
+        </div>
+        <div class="meetingid">
+            <span style="letter-spacing: 1px;">Meeting ID: 98706548998</span>
+            
+        </div>
+    </div>
+    <div class="three">
+        <p>View today's upcoming meetings(1)</p>
+            <span class="material-symbols-outlined">
+            calendar_clock
+        </span>
+    </div>
+</div>
+
+</body>
+</html>
