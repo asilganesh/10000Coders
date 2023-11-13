@@ -1,0 +1,100 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    font-size: 24px;
+
+}
+
+#navbar{
+    width: 20%;
+    float: left;
+    height: 100vh;
+
+
+}
+#navbar a{
+    text-decoration: none;
+    display: flex;
+    flex-flow:column;
+    color:gray;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 0px;
+    padding: 20px 10px;
+    justify-items: center;
+    align-items: center;
+
+}
+#navbar header{
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 0px;
+    font-size: 42px;
+    font-weight: lighter;
+    padding-bottom: 35px;
+
+
+}
+#main-doc{
+    width: 80%;
+    height: 100vh;
+    overflow: scroll;
+    white-space: wrap;
+    text-align: justify;
+}
+header,p,li,code{
+    padding: 20px;
+    padding-right:60px;
+    
+}
+header{
+    margin-left: 15px;
+    font-size: 42px;
+}
+p,li,code{
+    margin-left: 20px;
+    opacity: .7;
+    line-height: 150%;
+
+}
+code,pre{
+    background-color: #EBEDEF;
+    width: 90%;
+    display: inline-block;
+    white-space: wrap;
+    font-size: 20px;
+    padding-left: 40px;     
+
+
+}
+ul{
+    padding-left: 50px;   
+}
+p{
+    padding-left: 20px;     
+}
+li{
+    padding-left: 40px;     
+}
+#introduction{
+    margin-top: 30px;
+}
+@media only screen and (max-width:1500px) {
+    #navbar,#main-doc{
+       
+       width: 100%;
+       
+        border: 1px solid transparent;
+        box-shadow: 1px 1px 0px;
+        padding: 20px 10px;
+      
+    }
+    #navbar{
+        height: 30vh;
+        overflow: scroll;
+    }
+    
+}
