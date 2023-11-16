@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //    Write a program that counts the number of vowels in a given sentence (without using arrays or strings) using a `while` loop.
+
+      var i = "ganesh";
+      var j = 0;
+      var count = 0;
+
+      while (j <= i.length - 1) {
+        if (
+          i[j] == "a" ||
+          i[j] == "e" ||
+          i[j] == "i" ||
+          i[j] == "o" ||
+          i[j] == "u"
+        ) {
+          count = count + 1;
+        }
+
+        j++;
+      }
+      console.log(count);
+    </script>
+  </body>
+</html>
