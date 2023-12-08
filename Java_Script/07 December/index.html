@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     body{
+        font-size: 60px;
+    }
+   </style>
+</head>
+<body>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+
+    <script>
+        // debugger;
+        let a=["chaitanya","hello","kumar"]
+
+        var list=document.getElementsByTagName("li")
+        console.log(list)
+        var c=list.length/2
+        
+            
+
+            for(j=0;j<a.length;j++){
+    var even=""
+    var odd=""
+    
+    for(k=0;k<a[j].length;k++){
+        if(k%2==0){
+            even=even+a[j][k]
+        }
+        else{
+            odd=odd+a[j][k]
+        }
+    }
+    list[j].innerText=even
+    list[j].style.color="blue"
+list[c].innerText=odd
+list[c].style.color="green"
+c++
+   
+}
+
+        
+
+    </script>
+</body>
+</html>

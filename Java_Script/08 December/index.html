@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+        // debugger;
+let a=["pexels-creativebin-135940.jpg","pexels-jovana-nesic-593655.jpg","pexels-photo-674010.jpeg","pexels-sevenstorm-juhaszimrus-381739.jpg"]
+
+for(i=0;i<a.length;i++){
+    let image=document.createElement("img")
+    console.log(image)
+    image.setAttribute("src",a[i])
+    image.setAttribute("width","200px")
+    image.setAttribute("height","200px")
+    document.body.append(image)
+
+}
+
+
+        // let image=document.getElementsByTagName("img")
+
+        // image[0].setAttribute("src","pexels-photo-674010.jpeg")
+
+        // let a=["ganesh","koushik","sai","asil"]
+
+        // for(i=0;i<a.length;i++){
+
+        //     if(i%2==0){
+        //         let list=document.createElement("li")
+
+        //         list.innerText=a[i]+ " "+ i;
+
+        //         document.body.append(list)
+        //     }
+        // }
+
+        
+
+
+        // let a=document.getElementsByTagName("li")
+        // console.log(a[1])
+
+        // let b=document.getElementsByTagName("ul")
+
+        // let c=document.createElement("li")
+        // c.innerText="bye"
+
+        // b[0].insertBefore(c,a[1])
+
+        // let c1=document.createElement("li")
+        // c.innerText="bye bye"
+
+        // b[0].insertBefore(c,a[0])
+
+    </script>
+
+</body>
+</html>
