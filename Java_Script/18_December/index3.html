@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let img1 = document.createElement("img");
+      img1.setAttribute("src", "./images.jpg");
+      document.body.appendChild(img1);
+
+      img1.addEventListener("click", naruto);
+
+      function naruto() {
+        img1.setAttribute("src", "./download.jpg");
+      }
+    </script>
+  </body>
+</html>

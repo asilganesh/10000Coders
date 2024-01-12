@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10%
+        }
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+        function shoppingcart(){
+      let b = localStorage.getItem("cart");
+      b = JSON.parse(b);
+      console.log(b);
+
+     
+      b.map((val) => {
+        let tble = document.createElement("table");
+        document.body.appendChild(tble);
+
+        let trr = document.createElement("tr");
+
+        let td1 = document.createElement("td");
+        let getimg = document.createElement("img");
+        getimg.setAttribute("src", val.image);
+        td1.appendChild(getimg);
+        getimg.style.width = "100px";
+        let td2 = document.createElement("td");
+        td2.innerText = val.price;
+
+        let td3 = document.createElement("td");
+        let removebtn = document.createElement("button");
+        removebtn.innerText = "Remove Item";
+        td3.appendChild(removebtn);
+
+        trr.appendChild(td1);
+        trr.appendChild(td2);
+        trr.appendChild(td3);
+
+        tble.appendChild(trr);
+
+        removebtn.addEventListener("click", () => {
+          b = b.filter((value) => {
+            return value != val;
+          });
+          
+          localStorage.setItem("cart", JSON.stringify(b));
+          window.location.reload();
+        });
+      });
+    }
+
+    shoppingcart();
+    </script>
+  </body>
+</html>

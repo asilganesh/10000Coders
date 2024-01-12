@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button>
+        Next Page
+    </button>
+
+    <button>
+        Forward
+    </button>
+</body>
+
+<script>
+
+let getbtn=document.getElementsByTagName("button")
+
+getbtn[0].addEventListener('click',()=>{
+   let a=window.confirm("Go for Next Page")``
+    if(a){
+        window.open("./index2.html"),
+    }
+})
+
+// getbtn[0].addEventListener('click',()=>{
+//     window.open("./index2.html")
+// })
+
+getbtn[1].addEventListener('click',()=>{
+    window.history.forward()
+})
+
+</script>
+</html>

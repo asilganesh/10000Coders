@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+<style>
+    body{
+        display: grid;
+    }
+    table,tr,th,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+</head>
+<body>
+    
+    <script>
+let get=JSON.parse(localStorage.getItem('product'))
+console.log(get)
+
+        let tble=document.createElement('table')
+        document.body.appendChild(tble)
+
+        let trr=document.createElement('tr')
+        tble.appendChild(trr)
+
+        let td1=document.createElement('td')
+        td1.innerText=get.id
+        let td2=document.createElement('td')
+        td2.innerText=get.title
+        let td3=document.createElement('td')
+        td3.innerText=get.price
+        let td4=document.createElement('td')
+        td4.innerText=get.description
+
+        let td5=document.createElement('td')
+        let getimg=document.createElement('img')
+        getimg.setAttribute('src',get.image)
+        getimg.style.width="100px"
+    
+        td5.appendChild(getimg)
+
+        trr.appendChild(td1)
+        trr.appendChild(td2)
+        trr.appendChild(td3)
+        trr.appendChild(td4)
+        trr.appendChild(td5)
+
+        
+
+
+
+    </script>
+</body>
+</html>
